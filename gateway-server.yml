@@ -28,3 +28,4 @@ spring:
           - Path=/license/**
           filters:
           - RewritePath=/license/(?<path>.*), /$\{path}
+          - RemoveRequestHeader= Cookie,Set-Cookie
